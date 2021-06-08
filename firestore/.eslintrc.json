@@ -4,5 +4,10 @@
         "mdc": true,
         "importScripts": true,
         "FriendlyEats": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+        "sourceType": "module"
     }
 }

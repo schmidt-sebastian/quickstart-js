@@ -4,10 +4,31 @@
   "description": "Finished code for the Firestore codelab",
   "main": ".",
   "scripts": {
-    "fmt": "prettier --write scripts/* styles/*"
+    "prettier": "prettier --write scripts/* styles/*",
+    "lint": "eslint --fix '**/*.ts'",
+    "build": "rollup -c"
   },
   "author": "",
   "devDependencies": {
-    "prettier": "^1.5.3"
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.19",
+    "@material/auto-init": "^11.0.0",
+    "@material/dialog": "^11.0.0",
+    "@material/ripple": "^11.0.0",
+    "@material/toolbar": "^2.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "eslint": "^7.28.0",
+    "firebase": "9.0.0-beta.2",
+    "navigo": "^8.11.1",
+    "rollup": "^2.51.1",
+    "rollup-plugin-sass": "^1.2.2",
+    "typescript": "^4.3.2"
   }
 }

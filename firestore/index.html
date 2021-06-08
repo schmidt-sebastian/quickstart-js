@@ -224,6 +224,7 @@
   </ul>
 
   <aside id="dialog-filter-all" class="mdc-dialog">
+    <div class="mdc-dialog__container">
     <div class="mdc-dialog__surface">
       <div class="page" id="page-all">
         <header class="mdc-dialog__header">
@@ -236,7 +237,7 @@
           <div id="all-filters-list"></div>
         </section>
         <footer class="mdc-dialog__footer">
-          <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+          <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept">Accept</button>
         </footer>
       </div>
       <div class="page" id="page-category">
@@ -320,10 +321,12 @@
       </div>
     </div>
     <div class="mdc-dialog__backdrop"></div>
+    </div>
   </aside>
 
   <aside id="dialog-add-review"
     class="mdc-dialog">
+    <div class="mdc-dialog__container">
     <div class="mdc-dialog__surface">
       <header class="mdc-dialog__header">
         <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
@@ -341,24 +344,15 @@
           <textarea id="text"></textarea>
       </section>
       <footer class="mdc-dialog__footer">
-        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
-        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Save</button>
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">Cancel</button>
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept">Save</button>
       </footer>
     </div>
     <div class="mdc-dialog__backdrop"></div>
+    </div>
   </aside>
 </div>
 
-<script src="/__/firebase/8.6.5/firebase-app.js"></script>
-<script src="/__/firebase/8.6.5/firebase-auth.js"></script>
-<script src="/__/firebase/8.6.5/firebase-firestore.js"></script>
-<script src="/__/firebase/init.js"></script>
-
-<script src="//unpkg.com/navigo@6"></script>
-
-<script src="/scripts/FriendlyEats.js"></script>
-<script src="/scripts/FriendlyEats.View.js"></script>
-<script src="/scripts/FriendlyEats.Mock.js"></script>
-<script src="/scripts/FriendlyEats.Data.js"></script>
+<script src="/public/bundle.js"></script>
 </body>
 </html>

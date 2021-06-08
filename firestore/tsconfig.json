@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "importHelpers": true,
+    "strict": true,
+    "lib": [
+      "es2020","dom"
+    ],
+    "noImplicitAny": false,
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es2020",
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "outDir": "public",
+    "rootDir": "scripts"
+  },
+  "include": [ "**/*.ts" ],
+  "files": [
+    "scripts/FriendlyEats.ts"
+  ]
+}
